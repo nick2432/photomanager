@@ -1,0 +1,93 @@
+.imagebox1{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tags{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    color: black; 
+     max-width: 60%; 
+    width: 100%;
+}
+
+.preview{
+    display: flex;
+    gap: 10px;
+    max-width: 60%; 
+    width: 100%;
+    margin-bottom: 10px;
+    
+    
+}
+.download{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  
+   flex-wrap: wrap;
+}
+.imagedownload{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    color: black;
+}
+.informationbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.information1{
+    display: flex;
+    gap: 40px;
+}
+.imagecontainer1{
+    max-width: 60%; 
+    width: 100%;
+}
+.size{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border:  solid;
+    border-color: rgb(205, 209, 212);
+    height: 40px;
+    font-size: 1.3rem;
+    border-width: 1px;
+    gap: 100px;
+  
+}
+.btn2{
+    width: 200px;
+height: 37px;
+flex-shrink: 0;
+color: aliceblue;
+border-radius: 4.443px;
+background: #4BC34B;
+cursor: pointer;
+}
+@media (max-width: 768px) {
+    .imagedownload {
+      flex-direction: column;
+    }
+    .imagecontainer1 {
+      max-width: 100%;
+    }
+    .size {
+        max-width: 80%;
+        width: 200px; 
+        font-size: 20px;
+        gap: 10px; /* Reduce the gap between elements */
+        flex-grow: 1; /* Allow the elements to grow and take equal width */
+      }
+      .btn2{
+        margin-right:40px ;
+      }
+}

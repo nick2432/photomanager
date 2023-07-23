@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Euclid Circular B';
+  box-sizing: border-box;
+ 
+}
+.App{
+  width: 100%;
+  height: 100vh;
+  overflow: auto; /* Added this line */
+  background-image:url('./fuji-berg-mit-milchstrasse-in-der-nacht (1).png');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items:center ;
+  background-size: cover;
+  flex-direction: column;
+}
+.Homepage{
+  margin-top: 30px;
+  padding: 20px;
+  width: 70%;
+  height: 67.688px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8.906px;
+  background: rgba(217, 217, 217, 0.12);
+  box-shadow: -3px 3px 3px 0px rgba(255, 255, 255, 0.43) inset, 3px -3px 3px 0px rgba(182, 182, 182, 0.43) inset;
+  backdrop-filter: blur(25px);
+}
+.txt{
+  color: #FFF;
+  font-family: Euclid Circular B;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19.95px;
+}
+.bigtxt{
+  color: #FFF;
+  margin-top: 100px;
+  text-align: center;
+  text-shadow: 0px 3.5625px 3.5625px 0px rgba(0, 0, 0, 0.25);
+  font-family: Euclid Circular B;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87.638px; 
+}
+.search{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 67.688px;
+  border-radius: 8.906px;
+  background: rgba(217, 217, 217, 0.12);
+  box-shadow: -3.942500114440918px 3.942500114440918px 3.942500114440918px 0px rgba(255, 255, 255, 0.43) inset, 3.942500114440918px -3.942500114440918px 3.942500114440918px 0px rgba(182, 182, 182, 0.43) inset;
+  backdrop-filter: blur(25.034873962402344px);
+  border: none;
+}
+.input1{
+  background: none;
+  border: none;
+  padding: 10px;
+  height: 35px;
+  border-left: 1px solid;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #FFF;
+ font-weight: 200;
+}
+.trends{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 271.641px;
+height: 39.188px;
+flex-shrink: 0;
+  border-radius: 8.906px;
+background: rgba(217, 217, 217, 0.12);
+box-shadow: -3.942500114440918px 3.942500114440918px 3.942500114440918px 0px rgba(255, 255, 255, 0.43) inset, 3.942500114440918px -3.942500114440918px 3.942500114440918px 0px rgba(182, 182, 182, 0.43) inset;
+backdrop-filter: blur(25.034873962402344px);
+}
+.searchbutton{
+  width: 70.359px;
+height: 34.734px;
+flex-shrink: 0;
+color: #FFF;
+background: none;
+border-radius: 8.906px;
+border: 2.672px solid #FFF;
+}
+
+.imagebox{
+  width: 400.59px;
+  height: 242.607px;
+  cursor: pointer;
+}
+.divider{
+  display: grid;
+  width: 100%;
+  grid-template-rows: 200px 1fr;
+}
+.left{
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.right{
+  background-color: #FFF;
+
+  padding-top: 20px;
+}
+.imagecontainer{
+ 
+  padding: 10px;
+  padding-top: 20px;
+  gap: 80px;
+
+  height: 60vh; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+
+}
+.type{
+  display: flex;
+  gap: 75px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  color: black;
+  width: 10%;
+  font-size: 70%;
+  height: 40px;
+  border-color: #a9a9a9;
+  background: none;
+}
+@media (max-width: 768px) {
+  .App {
+    background-position: center center; 
+  }
+  .Homepage{
+    flex-direction: column;
+    height: 97px;
+  }
+  .search{
+    width: 100%;
+  }
+  .bigtxt{
+    font-size: 2rem;
+  }
+  .imagebox{
+    width: 250px;
+    height: 150.607px;
+  }
+  .type{
+    gap: 10px;
+    flex-wrap: wrap;
+    display: none;
+  }
+}
+
